@@ -1,0 +1,1096 @@
+# excellent-new
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Excellent Furnitures
+	</title>
+  <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="sidebar1.2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+  *{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#header{
+	background-image: url("./assets/office furniture to use-5.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.logo{
+	width: 100px;
+}
+
+.container{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.header-text{
+	max-width: 500px;
+	margin-top: 100px;
+	text-align:center;
+	 position: relative;
+}
+.added-text{
+	position: absolute;
+	top: 40px;
+}
+
+.header-text .bg-color{
+	width: 450px;
+	height: 300px;
+	background: darkblue;
+	padding: 35px;
+	border-radius: 50%;
+	opacity: 0.7;
+}
+
+.header-text h1{
+    font-size: 40px;
+    margin: 20px 0;
+    	color: #fff;
+    	font-weight: bold;
+}
+
+.header-text p{
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	margin-left: 25px;
+}
+
+#sideNav{
+	position: fixed;
+	height: 100vh;
+	top: 0px;
+	right: -400px;
+	padding: 0 15px;
+	background: darkblue;
+	transition: 1s;
+}
+
+nav ul li{
+	margin: 30px 0;
+	list-style: none;
+	margin-right: 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 23px;
+	color: #fff;
+}
+
+
+
+#menuBtn{
+	width: 20px;
+	position: fixed;
+	top: 35px;
+	right: 50px; 
+	z-index: 1;
+	cursor: pointer;
+	width: 15px;
+    height: 15px;
+    background: #013452;
+    padding: 12px;
+}
+
+#products{
+	padding: 150px 0;
+	margin: auto;
+}
+
+.promo-right-col h1{
+	margin-bottom: 30px;
+	color: darkblue;
+	font-size: 30px;
+	text-align: right;
+}
+
+.products-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.products-left-col{
+	flex-basis: 50%;
+}
+
+.products-left-col img{
+	width: 100%;
+}
+
+.products-right-col{
+   flex-basis: 40%;
+   text-align: right;
+}
+
+.products-text{
+	max-width: 500px;
+}
+
+.products-right-col h1{
+	font-size: 27px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: darkblue;
+}
+
+.products-right-col p{
+	line-height: 20px;
+}
+
+.decor{
+	margin-top: 80px;
+}
+
+.dec-1{
+	width: 100px;
+	height: 10px;
+	background: darkblue;
+	display: inline-block;
+}
+
+
+.dec-2{
+	width: 50px;
+	height: 10px;
+	background: darkblue;
+	display: inline-block;
+}
+
+.dec-3{
+	border: 10px solid darkblue;
+	background: darkblue;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.latest-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.latest-left-col{
+	flex-basis: 50%;
+}
+
+.latest-right-col h1{
+	margin-bottom: 30px;
+	text-align: right;
+	color: darkblue;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.latest-right-col{
+   flex-basis: 50%;
+}
+
+.latest-right-col img{
+	width: 100%;
+}
+
+.latest-text{
+	max-width: 500px;
+	text-align: right;
+	font-size: 20px;
+}
+
+.common-btn{
+	margin: 20px 0;
+}
+
+.latest-right-col button{
+	display: inline-block;
+	padding: 12px 30px;
+	border: 2px solid darkblue;
+	background: transparent;
+	font-weight: bold;
+	font-size: 20px;
+	color: darkblue;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.latest-text h1{
+	display: none;
+}
+
+a{
+	width: 150px;
+	display: inline-block;
+	padding: 12px 0;
+	background: transparent;
+	border: 2px solid darkblue;
+	text-align: center;
+	margin: 0 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color: darkblue;
+	position: relative;
+	z-index: 1;
+}
+
+
+.latest-btn{
+	text-align: left;
+	margin-top:50px;
+}
+
+
+}
+
+a span{
+	width: 100%;
+	height: 100%;
+	background: skyblue;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+a:hover span{
+       width: 100%;
+}
+
+.small-container{
+	padding-right: 25px;
+	padding-left: 25px;
+	max-width: 1080px;
+	margin: auto;
+}
+
+#Testimonial{
+	padding: 100px 0;
+}
+
+#Testimonial h1{
+	margin: 40px 200px 40px;
+	font-size: 30px;
+	padding: 10px;
+	max-width: 200px;
+	background: darkblue;
+	 color: #fff;
+}
+
+.test-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-3{
+	flex-basis: 25%;
+}
+
+.col-3 .img-box{
+	width: 300px;
+	height: 250px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+	padding: 10px 20px;
+	margin: 15px auto;
+	text-align: center;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.col-3 img{
+	width: 100px;
+	margin: 10px 0;
+	border-radius: 50%;
+	border: 3px solid darkblue;
+	padding: 0 18px;
+}
+
+.col-3 h3{
+	margin-top: 10px;
+	font-style: italic;
+	color: darkblue;
+}
+
+.col-3:hover .img-box{
+  transform: translateY(-10px);
+}
+
+
+#Testimonial .decor{
+  margin-left: 100px
+}
+
+.promo-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.promo-left-col{
+	flex-basis: 50%;
+}
+
+.promo-text{
+	max-width: 350px;
+}
+
+.promo-text h2{
+	font-size: 150px;
+	margin-top: 15px;
+	color: darkblue;
+}
+
+.promo-text h1{
+	font-size: 40px;
+	margin-bottom: 15px;
+	color: darkblue;
+}
+
+
+.promo-text .top{
+	font-size: 25px;
+	font-style: italic;
+	color: #000;
+}
+
+.promo-right-col{
+	flex-basis: 50%;
+}
+
+.promo-right-col img{
+	width: 100%;
+}
+
+
+#contacts{
+	padding: 100px 0;
+}
+
+.contact-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.contact-left-col{
+	flex-basis: 50%;
+}
+
+
+
+.contact-left-col h1{
+	margin-left: 100px;
+	color: darkblue;
+	font-size: 30px;
+}
+
+ form{
+	max-width: 350px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+form input{
+	width: 100%;
+	padding: 8px 30px;
+	outline: none;
+	border: 2px solid darkblue;
+	margin-bottom: 15px;
+}
+
+.contact-right-col{
+	flex-basis: 50%;
+}
+
+
+
+.button-1 input{
+	padding: 12px 0px;	
+	background: transparent;
+	border: 2px solid darkblue;
+	width: 100%;
+	max-width: 415px;
+	margin-left: 100px;
+	font-size: 18px;
+	font-weight: bold;
+	color: darkblue;
+	cursor: pointer;
+}
+
+
+.contact-right-col{
+	flex-basis: 50%;
+}
+
+.contact-right-col img{
+	width: 90%;
+}
+
+.turn{
+	text-align: right;
+}
+
+ hr{
+	
+	width: 100%;
+	border-top: 2px solid blue;
+	margin-bottom: 40px;
+}
+
+html{
+ 	scroll-behavior: smooth;
+}
+
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-left-col{
+	flex-basis: 50%;
+}
+
+.footer-right-col{
+	flex-basis: 40%;
+}
+
+.footer-links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.link-title h4{
+	margin-bottom: 10px;
+}
+
+.footer-info{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-support {
+	flex-basis: 12px;
+}
+
+.footer-logo{
+	flex-basis: 12px;
+}
+
+.footer-support small{
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***********media query screen less than 770px*******/
+
+@media only screen and (max-width: 770px){
+	#header{
+	background-image: linear-gradient(rgba(0,0,0,0.5), darkblue),url(./assets/pic-rebrand.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.logo{
+	width: 100px;
+}
+
+.container{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.header-text{
+	max-width: 800px;
+	margin-top: 100px;
+	text-align:center;
+	 position: relative;
+}
+.added-text{
+	position: absolute;
+	top: 40px;
+}
+
+.header-text .bg-color{
+	display: none;
+}
+
+.header-text h1{
+    font-size: 34px;
+    margin: 20px 0;
+    	color: #fff;
+    	font-weight: bold;
+}
+
+.header-text p{
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	margin-left: 15px;
+}
+
+#products{
+	padding: 150px 0;
+	margin: auto;
+}
+
+.products-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.products-left-col{
+	flex-basis: 100%;
+}
+
+.products-left-col img{
+	width: 100%;
+}
+
+.products-right-col{
+   flex-basis: 	100%;
+   text-align: right;
+   margin-top: 60px;
+}
+
+.products-text{
+	max-width: 500px;
+}
+
+.products-right-col h1{
+	font-size: 27px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: darkblue;
+}
+
+.products-right-col p{
+	line-height: 20px;
+}
+
+.decor{
+	margin-top: 80px;
+}
+
+.latest-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.latest-left-col{
+	flex-basis: 100%;
+}
+
+.latest-right-col h1{
+	display: none;
+	margin-bottom: 30px;
+	text-align: right;
+	color: darkblue;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.latest-right-col{
+   flex-basis: 100%;
+
+}
+
+.latest-right-col img{
+	width: 100%;
+	 margin-top: 100px;
+}
+
+.latest-text{
+	max-width: 500px;
+	text-align: right;
+	font-size: 20px;
+}
+
+.latest-text h1{
+	display: block;
+	margin-bottom: 30px;
+	text-align: right;
+	color: darkblue;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.common-btn{
+	margin: 20px 0;
+}
+
+.latest-right-col button{
+	display: inline-block;
+	padding: 12px 30px;
+	border: 2px solid darkblue;
+	background: transparent;
+	font-weight: bold;
+	font-size: 20px;
+	color: darkblue;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+a{
+	width: 140px;
+	display: inline-block;
+	padding: 12px 0;
+	background: transparent;
+	border: 2px solid darkblue;
+	text-align: center;
+	margin: 0 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color: darkblue;
+	position: relative;
+	z-index: 1;
+}
+
+
+.latest-btn{
+	text-align: left;
+	margin-top:50px;
+}
+
+
+#Testimonial h1{
+	margin: 40px auto;
+	font-size: 30px;
+	padding: 10px 30px;
+	min-width: 200px;
+	background: darkblue;
+	 color: #fff;
+	 text-align: center;
+}
+
+.promo-left-col{
+	flex-basis: 100%;
+}
+
+.promo-text{
+	max-width: 350px;
+}
+
+.promo-text h2{
+	font-size: 75px;
+	margin-top: 15px;
+	color: darkblue;
+}
+
+.promo-text h1{
+	font-size: 30px;
+	margin-bottom: 15px;
+	color: darkblue;
+	text-align: center;
+}
+
+
+.promo-text .top{
+	font-size: 25px;
+	font-style: italic;
+	color: #000;
+}
+
+.promo-right-col{
+	flex-basis: 100%;
+	margin-top: 80px;
+}
+
+.promo-right-col img{
+	width: 100%;
+
+}
+
+.contact-left-col{
+	flex-basis: 100%;
+}
+
+
+
+.contact-left-col h1{
+	margin-left: 100px;
+	margin-bottom: 30px;
+	color: darkblue;
+	font-size: 25px;
+}
+
+ form{
+	max-width: 600px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+form input{
+	width: 50%;
+	padding: 8px 30px;
+	outline: none;
+	border: 2px solid darkblue;
+	margin-bottom: 15px;
+}
+
+.contact-right-col{
+	flex-basis: 100%;
+	margin-top: 30px;
+}
+
+.button-1 button{
+	padding: 12px 0px;	
+	background: transparent;
+	border: 2px solid darkblue;
+	width: 53%;
+	max-width: 260px;
+	margin-left: 100px;
+	font-size: 18px;
+	font-weight: bold;
+	color: darkblue;
+}
+
+
+
+
+.contact-right-col{
+	flex-basis: 100%;
+	padding: 15px 30px;
+}
+
+.contact-right-col img{
+	width: 100%;
+}
+
+.turn{
+	text-align: right;
+}
+
+#Testimonial .decor{
+  margin-left: 50px
+}
+
+
+#footer{
+	padding: 30px auto;
+}
+
+.footer-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer-left-col{
+	flex-basis: 100%;
+
+}
+
+
+
+.footer-links{
+	margin-left: 40px;
+}
+
+
+.footer-right-col{
+	flex-basis: 100%;
+}
+
+
+.link-title{
+	flex-basis: 50%;
+	padding: 15px 0;
+}
+
+.footer-info{
+	margin-top: 40px;
+	display:flex;
+	align-items: flex-end;
+	justify-content: space-around ;
+}
+
+.footer-support, .footer-logo{
+	flex-basis: 40%;
+}
+
+.link-title h4{
+	margin-bottom: 3px;
+}
+
+.link-title small{
+	margin-bottom: 5px 
+}
+
+
+}
+
+
+  </style>
+</head>
+
+<body>
+  
+  <section id="header">
+<img src="my new logo white 2.png" class="logo">
+    <div class="container">
+  	<div class="header-text">
+  		<div class="bg-color"></div>
+  		<div class="added-text">
+     <h1>Good Furniture<br>worth the Price</h1>
+     <p>Nothing like having a good furniture at home, it gives the interior of a house a really taste of beauty that money can't buy. Classic Furnitures are aesthestic pillars for good office and home interior</p>
+     </div>
+     </div>
+  	</div>
+  	</div>
+
+  	<nav id="sideNav">
+  		<ul>
+  			<li><a href="#header">home</a></li>
+  			<li><a href="#products">Products</a></li>
+  			<li><a href="#latest">Latest</a></li>
+  			<li><a href="#Testimonial">Testimonial</a></li>
+  			<li><a href="#promo">Promo</a></li>
+  			<li><a href="#contacts">Contact</a></li>
+  		</ul>
+  	</nav>
+  	<img src="./images/menu-icon.png" id="menuBtn">
+  </section>
+
+  <section id="products">
+  	<div class="container products-row">
+  		<div class="products-left-col">
+  			<img src="./assets/H FURNITURE 4.jpg">
+  			<div class="common-btn">
+  				
+  			</div>
+  		</div>
+  		<div class="products-right-col">
+  			<div class="products-text">
+  				<h1>Stylish Furniture For You</h1>
+  				<p>Excellent Furnitures is the only company that sell stylish product in Nigeria and Africa. We sells at a very and give away price. Our Furnitures are durable and worth their hype</p>
+  			 <div class="decor">
+     	<span class="dec-1"></span><br>
+     	<span class="dec-2"></span><br>
+     	<span class="dec-3"></span>
+  			</div>
+  </section>
+
+
+  <section id="latest">
+  	<div class="container latest-row">
+  		<div class="latest-left-col">
+  			<div class="latest-text">
+  				<h1>Latest Product</h1>
+  				We have latest products that are unique and beautiful. Most of all our products are from italy, USA, Germany and UK. we also have locally made Nigeria Furnitures that are made from durable woods. We satisfy our customers base on what they can afford.
+  				Order now for your choice furniture. Can always get your taste here. You can also call us to place your order.
+  				<div class="latest-btn">
+     	<span class="dec-1"></span><br>
+     	<span class="dec-2"></span><br>
+     	<span class="dec-3"></span>
+  			</div>
+  			</div>
+  		</div>
+  		<div class="latest-right-col">
+  			<h1>Latest Product</h1>
+  			<img src="./assets/OFFICE FUR 1.jpg">
+  			<div class="common-btn">
+                 <a href="lates.html" class="btn-1"><span></span>More Products</a>
+  			<!--<button><span></span>More</button>-->
+  			</div>
+  		</div>
+  	</div>
+
+  </section>
+
+  <section id="Testimonial">
+  	<h1>Testimonials</h1>
+  	 <div class="container test-row">
+  	 	<div class="col-3">
+  	 		<div class="img-box">
+  	 	<img src="./images/man 7.png" class="test-img">
+  	 	<div class="test-text">
+            <i class="fa fa-quote-left"></i>
+  	 		<p>I've bought several furnitures from this company. They are beautiful, strong and durable. I love Excellent Furniture</p>
+  	 		<h3>Tom Bosnon</h3>
+  	 		</div>
+  	 	</div>
+  	 	</div>
+  	 	<div class="col-3">
+  	 		<div class="img-box">
+  	 	<img src="./images/man 6.jpg" class="test-img">
+  	 	<div class="test-text">
+  	 		<i class="fa fa-quote-left"></i>
+  	 		<p>I place order for a furniture, I got it within an hour. I was so amazing seeing my furnitures well parked at my doorstep</p>
+  	 		<h3>Bommy Yatluv</h3>
+  	 		</div>
+  	 	</div>
+  	 	</div>
+  	 	<div class="col-3">
+  	 		<div class="img-box">
+  	 	<img src="./images/woman-1.png" class="test-img">
+  	 	<div class="test-text">
+  	 		<p>I be willing to order more furnitures from the company. Their product and services are simpling the best.</p>
+  	 		<h3>watt Kelly</h3>
+  	 		</div>
+  	 	</div>
+  	 	</div>
+       
+  	 </div>
+     <div class="decor">
+     	<span class="dec-1"></span><br>
+     	<span class="dec-2"></span><br>
+     	<span class="dec-3"></span>
+  			</div>
+  </section>
+
+  <section id="promo">
+  	<div class="container promo-row">
+  		<div class="promo-left-col">
+  			<div class="promo-text">
+  				<h1>Promo Time</h1>
+  				<p>We are giving away alot of discount prices on all of our furnitures. Make haste to claim yours now.</p>
+  				<h3>Hurry!! Hurry!!</h3>
+                <h2>76%<span class="top">Discount</span></h2>
+  			</div>
+  		</div>
+  		<div class="promo-right-col">
+  			<h1>Discount Products</h1>
+  			<img src="./assets/Office-Furniture-You-Need.jpg">
+  			<div class="common-btn">
+                 <a href="discount.html" class="btn-1"><span></span>Click For More</a>
+             </div>
+             <div class="decor turn">
+     	<span class="dec-1"></span><br>
+     	<span class="dec-2"></span><br>
+     	<span class="dec-3"></span>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+  <section id="contacts">
+  	<div class="contact-row">
+
+  		<div class="contact-left-col">
+  			<h1>Sign Up for our Latest<br> Product Updates.</h1>
+  			<form action="connect.php" method="post">
+  				<input type="text" placeholder="Enter your name" name="yourName" id="yourName">
+  				<input type="email" placeholder="Enter your email" name="email" id="email">
+  			 <input type="password" placeholder="Enter your password" name="password" id="password">
+          <input type="number" placeholder="Enter your phone number" name="number" id="number">
+  			</form>
+        <div class="button-1">
+        <input type="submit" id="submit" class="reg">
+        </div>
+  			<!--<div class="button-1">
+  			<button class="reg">Register</button>
+  			</div>-->
+  		</div>
+  		  		<div class="contact-right-col">
+  		  
+
+  			<div class="img-circle">
+  			<img src="./images/contact.jpg">
+  			</div>
+  		  		</div>
+  	</div>
+
+  </section>
+
+
+
+  <section id="footer">
+  	<div class="container footer-row">
+  		<hr>
+  		<div class="footer-left-col">
+  			<div class="footer-links">
+  				<div class="link-title">
+  					<h4>Products</h4>
+  					<small>German Furnitures</small><br>
+  					<small>US Spec Furnitures</small>
+  				</div>
+  				<div class="link-title">
+  					<h4>Discounts</h4>
+  					<small>Nigeria Discount</small><br>
+  					<small>Magolian Discount</small><br>
+  				</div>
+  				<div class="link-title">
+  					<h4>Office Branches</h4>
+  					<small>Abuja Branch</small><br>
+  					<small>Kano Furnitures</small>
+  				</div>
+  				<div class="link-title">
+  					<h4>Other Services</h4>
+  					<small>ICT</small><br>
+  					<small>Oil & Gas</small>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="footer-right-col">
+  			<div class="footer-info">
+  			<div class="footer-support">
+  				<small>support@excellentsolutions</small><br><br>
+  				<small><b>Copyright</b><br> Excellent Solutions</small>
+  			</div>
+  			<div class="footer-logo">
+  				<img src="my new logo white 2.png" class="logo">
+  				<a href="#contacts" class="btn-1"><span></span>Sign up</a>
+  			</div>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+  <script type="text/javascript">
+  	var sideNav = document.getElementById("sideNav"); 
+  	var menuBtn = document.getElementById("menuBtn"); 
+ 
+  	sideNav.style.right = "-400px"; 
+ 
+  	 menuBtn.onclick = function(){ 
+  	 	if (sideNav.style.right == "-400px") { 
+  	 		sideNav.style.right = "0px"; 
+  	 	} 
+  	 	else{ 
+  	 		sideNav.style.right = "-400px"; 
+  	 	} 
+  	 } 
+  </script> 
+</body> 
+</html> 
+
